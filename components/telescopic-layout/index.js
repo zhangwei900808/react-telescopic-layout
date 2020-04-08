@@ -3,6 +3,7 @@ import TlContainer from './TlContainer';
 import TlContent from './TlContent';
 import TlSidePanel from './TlSidePanel';
 import TlSideToolbar from './TlSideToolbar';
+import TlNavigation from './TlNavigation'
 
 class TelescopicPanel extends PureComponent {
   constructor(props) {
@@ -10,10 +11,14 @@ class TelescopicPanel extends PureComponent {
   }
   render() {
     return <TlContainer>
-              <TlSideToolbar></TlSideToolbar>
-              <TlSidePanel></TlSidePanel>
-              <TlContent></TlContent>
-            </TlContainer>
+      <TlNavigation>
+        <TlSideToolbar></TlSideToolbar>
+        <TlSidePanel></TlSidePanel>
+      </TlNavigation>
+      <TlContent>
+        <TlSidePanel></TlSidePanel>
+      </TlContent>
+    </TlContainer>
   }
 }
 

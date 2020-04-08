@@ -1,11 +1,15 @@
-import React,{PureComponent} from 'react';
+import React, { PureComponent } from 'react';
 
-class TlContent extends PureComponent{
-    constructor(props){
+class TlContent extends PureComponent {
+    constructor(props) {
         super(props);
     }
-    render(){
-        return <div>this si TlContent </div>
+    render() {
+        const { children } = this.props;
+        return <div>
+            <div>this is content</div>
+            {children}
+        </div>
     }
 }
 
