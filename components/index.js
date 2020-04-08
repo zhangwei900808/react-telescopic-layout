@@ -1,4 +1,4 @@
-import TelescopicPanel from "./telescopic-panel";
+import TelescopicLayout from "./telescopic-layout";
 
-export {TelescopicPanel};
-export default {TelescopicPanel};
+export {TelescopicLayout};
+export default {TelescopicLayout};

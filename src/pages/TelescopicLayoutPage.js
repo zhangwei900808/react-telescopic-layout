@@ -1,22 +1,22 @@
 import React, {Component} from "react";
 import {Button, Layout, Icon} from "antd";
 import {Map} from "immutable";
-import TelescopicPanel from "../../components/telescopic-panel";
-import "../../components/telescopic-panel/style"
-import "./telescopicPanel.less"
+import TelescopicLayout from "../../components/telescopic-layout";
+import "../../components/telescopic-layout/style"
+import "./telescopicLayout.less"
 
 const {Header, Content, Footer} = Layout;
 
-class TelescopicPanelPage extends Component {
+class TelescopicLayoutPage extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return <div className="hello">
-      <TelescopicPanel/>
+      <TelescopicLayout/>
     </div>;
   }
 }
 
-export default TelescopicPanelPage;
+export default TelescopicLayoutPage;

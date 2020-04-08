@@ -1,7 +1,7 @@
 {
-  "name": "react-telescopic-panel",
+  "name": "react-telescopic-layout",
   "version": "1.0.0",
-  "description": "react telescopic panel",
+  "description": "react telescopic layout",
   "main": "lib/index.js",
   "module": "es/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "keywords": [
     "react",
     "telescopic",
-    "panel"
+    "layout"
   ],
   "devDependencies": {
     "@babel/cli": "^7.5.5",
