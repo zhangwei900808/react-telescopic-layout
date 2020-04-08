@@ -1,19 +1,19 @@
 import React, { PureComponent } from 'react';
-import TpContainer from './TpContainer';
-import TpContent from './TpContent';
-import TpSidePanel from './TpSidePanel';
-import TpSideToolbar from './TpSideToolbar';
+import TlContainer from './TlContainer';
+import TlContent from './TlContent';
+import TlSidePanel from './TlSidePanel';
+import TlSideToolbar from './TlSideToolbar';
 
 class TelescopicPanel extends PureComponent {
   constructor(props) {
     super(props);
   }
   render() {
-    return <TpContainer>
-              <TpSideToolbar></TpSideToolbar>
-              <TpSidePanel></TpSidePanel>
-              <TpContent></TpContent>
-            </TpContainer>
+    return <TlContainer>
+              <TlSideToolbar></TlSideToolbar>
+              <TlSidePanel></TlSidePanel>
+              <TlContent></TlContent>
+            </TlContainer>
   }
 }
 

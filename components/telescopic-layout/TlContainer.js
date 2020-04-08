@@ -1,6 +1,6 @@
 import React,{PureComponent} from 'react';
 
-class TpContainer extends PureComponent{
+class TlContainer extends PureComponent{
     constructor(props){
         super(props);
     }
@@ -9,4 +9,4 @@ class TpContainer extends PureComponent{
         return <div>{children} </div>
     }
 }
-export default TpContainer;
+export default TlContainer;

@@ -13,9 +13,7 @@ class TelescopicLayoutPage extends Component {
   }
 
   render() {
-    return <div className="hello">
-      <TelescopicLayout/>
-    </div>;
+    return <TelescopicLayout/>;
   }
 }
 
