@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e823a14-33f1-4e89-ac71-0533ffb94754" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/TelescopicPanelPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/telescopicPanel.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/webpack.config.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/webpack.config.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/webpack.config.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/webpack.config.prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/webpack.config.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/webpack.config.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TelescopicPanelPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TelescopicPanelPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586252538203</updated>
       <workItem from="1586252539767" duration="2970000" />
-      <workItem from="1586308660931" duration="2803000" />
+      <workItem from="1586308660931" duration="3131000" />
     </task>
     <servers />
   </component>
