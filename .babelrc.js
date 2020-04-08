@@ -43,19 +43,10 @@ if (babel_env === "preview") {
     {
       libraryName: "antd",
       libraryDirectory: "es",
-      style: "css" // `style: true` 会加载 less 文件
+      style: true // `style: true` 会加载 less 文件
     },
     "ant-design"
   ]);
-  // plugins.push([
-  //   "import",
-  //   {
-  //     libraryName: "hiynn-design",
-  //     libraryDirectory: "es",
-  //     style: true // `style: true` 会加载 less 文件
-  //   },
-  //   "hiynn-design"
-  // ]);
 }
 
 module.exports = { presets, plugins };

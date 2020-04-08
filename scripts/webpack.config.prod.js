@@ -48,7 +48,21 @@ module.exports = {
             }
           },
           {
-            loader: "postcss-loader"
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss",
+              sourceMap: true,
+              plugins: () => [
+                postcssPresetEnv({
+                  stage: 3,
+                  features: {
+                    "custom-properties": true,
+                    "nesting-rules": true
+                  },
+                  browsers: "last 2 versions"
+                })
+              ]
+            }
           },
           {
             loader: "less-loader",

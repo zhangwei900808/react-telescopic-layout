@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e823a14-33f1-4e89-ac71-0533ffb94754" name="Default Changelist" comment="" />
+    <list default="true" id="8e823a14-33f1-4e89-ac71-0533ffb94754" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/TelescopicPanelPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/telescopicPanel.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/webpack.config.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/webpack.config.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/webpack.config.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/webpack.config.prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/webpack.config.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/webpack.config.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +21,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aCvlB65XY8pET3gx6hkXi3M0ib" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,11 +32,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -39,7 +52,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586252538203</updated>
-      <workItem from="1586252539767" duration="2874000" />
+      <workItem from="1586252539767" duration="2970000" />
+      <workItem from="1586308660931" duration="2803000" />
     </task>
     <servers />
   </component>

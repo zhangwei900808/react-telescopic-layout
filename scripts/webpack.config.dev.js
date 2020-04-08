@@ -6,30 +6,56 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const nodeExternals = require("webpack-node-externals");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const postcssPresetEnv = require("postcss-preset-env");
 
 const resolve = dir => path.join(__dirname, ".", dir);
 const isProd = process.env.NODE_ENV === "production";
-const { version, name, description } = require("../package.json");
+const {version, name, description} = require("../package.json");
 const docsDir = path.join(process.cwd(), "docs");
 
 module.exports = {
   mode: "development",
-  entry: { [name]: "./src/index.js" },
+  entry: {[name]: "./src/index.js"},
   devtool: "source-map",
   module: {
     rules: [
-      {
-        test: /\.md$/,
-        use: "raw-loader"
-      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        // 编译less
+        test: /\.css$/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1
+            }
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss",
+              sourceMap: true,
+              plugins: () => [
+                postcssPresetEnv({
+                  stage: 3,
+                  features: {
+                    "custom-properties": true,
+                    "nesting-rules": true
+                  },
+                  browsers: "last 2 versions"
+                })
+              ]
+            }
+          }
+        ]
       },
       {
         // 编译less
@@ -43,23 +69,26 @@ module.exports = {
             }
           },
           {
-            loader: "postcss-loader"
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss",
+              sourceMap: true,
+              plugins: () => [
+                postcssPresetEnv({
+                  stage: 3,
+                  features: {
+                    "custom-properties": true,
+                    "nesting-rules": true
+                  },
+                  browsers: "last 2 versions"
+                })
+              ]
+            }
           },
           {
             loader: "less-loader",
             options: {
               javascriptEnabled: true
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(jpe?g|png|gif|ogg|mp3)$/,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: 10 * 1000
             }
           }
         ]
@@ -100,7 +129,7 @@ module.exports = {
         assetNameRegExp: /\.css\.*(?!.*map)/g, //注意不要写成 /\.css$/g
         cssProcessor: require("cssnano"),
         cssProcessorOptions: {
-          discardComments: { removeAll: true },
+          discardComments: {removeAll: true},
           safe: true,
           autoprefixer: false
         },
