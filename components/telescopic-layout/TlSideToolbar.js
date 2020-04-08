@@ -1,11 +1,19 @@
-import React,{PureComponent} from 'react';
+import React, { PureComponent } from 'react';
+import { ThemeContext, themes } from './theme-context'
 
-class TlSideToolbar extends PureComponent{
-    constructor(props){
+
+class TlSideToolbar extends PureComponent {
+    constructor(props) {
         super(props);
     }
-    render(){
-        return <div>this si TlSideToolbar </div>
+    render() {
+        return <ThemeContext.Consumer>
+            {({ theme }) => (
+                <div className="side-toolbar">
+                    {theme.background}
+                </div>
+            )}
+        </ThemeContext.Consumer>
     }
 }
 
